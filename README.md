@@ -1,0 +1,1 @@
+https://www.bezkoder.com/node-js-typescript-mysql/#mysql2
