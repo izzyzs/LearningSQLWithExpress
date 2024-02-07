@@ -17,7 +17,7 @@ class TutorialRepository implements ITutorialRepository {
             connection.query<ResultSetHeader>(
                 "INSERT INTO tutorials (title, description, published) VALUES(?, ?, ?)",
                 [tutorial.title, tutorial.description, tutorial.published ? tutorial.published : false],
-                (err: Error, res: Response) => {
+                (err: Error, res) => {
                     if (err) reject(err);
                     else this.retrieveById(res.insertId)
                             .then((tutorial) => resolve(tutorial!))

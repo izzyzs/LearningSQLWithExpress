@@ -1,4 +1,6 @@
+// @ts-ignore
 import express, {Express, Request, Response} from 'express';
+// @ts-ignore
 import dotenv from "dotenv";
 import router from './routes/tutorial.routes';
 

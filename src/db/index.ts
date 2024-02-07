@@ -1,3 +1,4 @@
+// @ts-ignore
 import mysql from "mysql2";
 import dbConfig from "../../db.config";
 
